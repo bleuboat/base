@@ -1,5 +1,5 @@
 @charset "UTF-8";
- 
+
 /* -------------------- */
 /* 0. Imports --------- */
 /* -------------------- */
@@ -8,7 +8,7 @@
 @import "https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@100..900&display=swap";
 @import "https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&display=swap";
 @import "https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.13.1/font/bootstrap-icons.min.css";
- 
+
 /* -------------------- */
 /* 1. Root ------------ */
 /* -------------------- */
@@ -18,10 +18,10 @@
   --title-font: var(--body-font);
   --ui-font: var(--body-font);
   --mono-font: "JetBrains Mono", Menlo, Monaco, Consolas, "Liberation Mono", "Noto Sans SC", "Noto Sans TC", monospace;
- 
+
   --body-font-size: clamp(0.825rem, calc(0.775rem + 0.195vw), 1rem);
   --body-line-height: 1.5;
- 
+
   --header-height: 7rem;
   --header-height-on-mobile: 7rem;
   --topbar-height: 2rem;
@@ -32,7 +32,7 @@
   --topbar-drop-height: var(--topbar-height);
   --header-margin: max(calc((100% - var(--header-width)) / 2), 0.5rem);
   --topbar-margin: max(calc((100% - var(--header-width)) / 2), 0rem);
- 
+
   --header-title: "The Backrooms";
   --header-subtitle: "你曾经来过这里";
   --header-title-font-size: 2.65rem;
@@ -41,34 +41,34 @@
   --header-subtitle-font-size: 1rem;
   --header-subtitle-font-size-on-mobile: 0.6rem;
   --header-subtitle-font-weight: 700;
- 
+
   --global-border-width: 0.0625rem;
- 
+
   --global-function: cubic-bezier(0.4, 0, 0.2, 1);
   --global-transition: 0.2s var(--global-function);
   --ui-transition: 0.3s var(--global-function);
   --loading-animation: 1s linear;
- 
+
   --tags-tip: "标签：";
   --popup-tip: "（点击空白处关闭）";
   --sidebar-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 16 16'%3E%3Cpath fill-rule='evenodd' d='M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5'/%3E%3C/svg%3E");
- 
+
   --base-white: 252, 252, 252;
   --base-light: 244, 244, 244;
   --base-medium: 221, 221, 221;
   --base-dark: 66, 66, 66;
   --base-black: 12, 12, 12;
- 
+
   --base-accent-light: 68, 123, 230;
   --base-accent-medium: 24, 80, 187;
   --base-accent-dark: 23, 24, 120;
   --base-accent-alt: 253, 126, 20;
- 
+
   --warning-color: 220, 53, 69;
   --accept-color: 140, 164, 46;
   --warning-text-color: var(--base-white);
   --accept-text-color: var(--base-white);
- 
+
   --global-bg-color: var(--base-white);
   --global-text-color: var(--base-black);
   --light-bg-color: var(--base-light);
@@ -79,97 +79,97 @@
   --dark-text-color: var(--base-white);
   --focus-bg-color: var(--base-accent-light);
   --focus-text-color: var(--base-white);
- 
+
   --link-color: var(--base-accent-medium);
   --link-hover-color: var(--base-accent-light);
   --link-visited-color: var(--base-accent-dark);
   --link-newpage-color: var(--base-accent-alt);
- 
+
   --global-border-color: var(--global-text-color), 0.25;
   --global-fader-color: var(--global-text-color), 0.125;
   --global-shadow-color: var(--global-text-color);
- 
+
   --body-bg-color: var(--global-bg-color);
   --body-text-color: var(--global-text-color);
- 
+
   --selection-bg-color: var(--focus-bg-color);
   --selection-text-color: var(--focus-text-color);
   --scrollbar-track-color: var(--medium-bg-color), 0.2;
   --scrollbar-thumb-color: var(--dark-bg-color), 0.4;
- 
+
   --button-bg-color: var(--light-bg-color);
   --button-text-color: var(--light-text-color);
   --button-hover-bg-color: var(--medium-bg-color);
   --button-hover-text-color: var(--medium-text-color);
- 
+
   --input-bg-color: var(--global-bg-color);
   --input-text-color: var(--global-text-color);
   --input-border-color: var(--global-border-color);
   --input-border-width: var(--global-border-width);
- 
+
   --header-bg-color: var(--global-bg-color);
   --header-text-color: var(--global-text-color);
   --header-link-color: var(--link-color);
   --header-bg: rgb(var(--header-bg-color));
- 
+
   --topbar-bg-color: 0, 0, 0, 0;
   --topbar-text-color: var(--header-text-color);
   --topbar-hover-bg-color: var(--light-bg-color);
   --topbar-hover-text-color: var(--light-text-color);
- 
+
   --topbar-drop-bg-color: var(--header-bg-color);
   --topbar-drop-text-color: var(--header-text-color);
   --topbar-drop-hover-bg-color: var(--light-bg-color);
   --topbar-drop-hover-text-color: var(--light-text-color);
   --topbar-drop-border-color: var(--global-border-color);
   --topbar-drop-border-width: var(--global-border-width);
- 
+
   --account-button-bg-color: var(--button-bg-color);
   --account-button-text-color: var(--button-text-color);
   --account-button-hover-bg-color: var(--button-hover-bg-color);
   --account-button-hover-text-color: var(--button-hover-text-color);
- 
+
   --account-drop-bg-color: var(--topbar-drop-bg-color);
   --account-drop-text-color: var(--topbar-drop-text-color);
   --account-drop-hover-bg-color: var(--topbar-drop-hover-bg-color);
   --account-drop-hover-text-color: var(--topbar-drop-hover-text-color);
   --account-drop-border-width: var(--topbar-drop-border-width);
   --account-drop-border-color: var(--topbar-drop-border-color);
- 
+
   --search-bg-color: var(--account-button-bg-color);
   --search-text-color: var(--account-button-text-color);
   --search-hover-bg-color: var(--account-button-hover-bg-color);
   --search-hover-text-color: var(--account-button-hover-text-color);
- 
+
   --handle-bg-color: var(--dark-bg-color);
   --handle-text-color: var(--dark-text-color);
- 
+
   --sidebar-bg-color: var(--global-bg-color);
   --sidebar-text-color: var(--global-text-color);
   --sidebar-hover-bg-color: var(--light-bg-color);
   --sidebar-hover-text-color: var(--light-text-color);
   --sidebar-icon-color: var(--dark-bg-color);
- 
+
   --heading-bg-color: var(--light-bg-color);
   --heading-text-color: var(--light-text-color);
   --heading-hover-bg-color: var(--medium-bg-color);
   --heading-hover-text-color: var(--medium-text-color);
- 
+
   --title-text-color: var(--body-text-color);
   --title-border-color: var(--global-border-color);
   --title-border-width: var(--global-border-width);
- 
+
   --tags-border-color: var(--global-border-color);
   --tags-border-width: var(--global-border-width);
   --tags-bg-color: var(--light-bg-color);
   --tags-text-color: var(--light-text-color);
   --tags-hover-bg-color: var(--medium-bg-color);
   --tags-hover-text-color: var(--medium-text-color);
- 
+
   --footer-bg-color: var(--global-bg-color);
   --footer-text-color: var(--global-text-color);
   --footer-link-color: var(--footer-text-color);
- 
+
   --toc-bg-color: var(--global-bg-color);
   --toc-text-color: var(--global-text-color);
   --toc-title-bg-color: var(--light-bg-color);
@@ -178,10 +178,10 @@
   --toc-title-hover-text-color: var(--medium-text-color);
   --toc-border-color: var(--global-border-color);
   --toc-border-width: var(--global-border-width);
- 
+
   --hr-color: var(--global-border-color);
   --hr-thickness: var(--global-border-width);
- 
+
   --tab-bg-color: var(--light-bg-color);
   --tab-text-color: var(--light-text-color);
   --tab-hover-bg-color: var(--medium-bg-color);
@@ -192,32 +192,32 @@
   --tab-content-text-color: var(--global-text-color);
   --tab-border-color: var(--global-border-color);
   --tab-border-width: var(--global-border-width);
- 
+
   --table-border-color: var(--global-border-color);
   --table-border-width: var(--global-border-width);
   --th-bg-color: var(--light-bg-color);
   --th-text-color: var(--light-text-color);
   --td-bg-color: var(--global-bg-color);
   --td-text-color: var(--global-text-color);
- 
+
   --blockquote-bg-color: var(--light-bg-color);
   --blockquote-text-color: var(--light-text-color);
   --blockquote-border-color: var(--global-border-color);
   --blockquote-border-width: var(--global-border-width);
- 
+
   --code-bg-color: var(--light-bg-color);
   --code-text-color: var(--light-text-color);
   --code-border-color: var(--global-border-color);
   --code-border-width: var(--global-border-width);
- 
+
   --note-bg-color: 255, 243, 205;
   --note-text-color: var(--global-text-color);
- 
+
   --footnotes-background-color: var(--light-bg-color);
   --footnotes-text-color: var(--light-text-color);
   --footnotes-border-color: var(--global-border-color);
   --footnotes-border-width: 0.375rem;
- 
+
   --rate-bg-color: var(--light-bg-color);
   --rate-text-color: var(--light-text-color);
   --rate-border-color: var(--global-border-color);
@@ -230,12 +230,12 @@
   --cancel-text-color: var(--medium-text-color);
   --info-bg-color: var(--focus-bg-color);
   --info-text-color: var(--focus-text-color);
- 
+
   --image-border-color: var(--global-border-color);
   --image-border-width: var(--global-border-width);
   --image-caption-bg-color: var(--light-bg-color);
   --image-caption-text-color: var(--light-text-color);
- 
+
   --popup-bg-color: var(--global-bg-color);
   --popup-text-color: var(--global-text-color);
   --popup-title-bg-color: var(--light-bg-color);
@@ -245,12 +245,12 @@
   --popup-tip-text-color: var(--global-text-color);
   --popup-border-color: var(--global-border-color);
   --popup-border-width: var(--global-border-width);
- 
+
   --hovertip-bg-color: var(--popup-bg-color);
   --hovertip-text-color: var(--popup-text-color);
   --hovertip-border-color: var(--popup-border-color);
   --hovertip-border-width: var(--popup-border-width);
- 
+
   --action-subtext-color: var(--body-text-color), 0.75;
   --action-border-color: var(--global-border-color);
   --action-border-width: var(--global-border-width);
@@ -258,7 +258,7 @@
   --action-info-text-color: var(--light-text-color);
   --action-info-border-color: var(--action-border-color);
   --action-info-border-width: var(--action-border-width);
- 
+
   --white-monochrome: var(--base-white);
   --pale-gray-monochrome: var(--base-light);
   --gray-monochrome: var(--base-dark);
@@ -273,7 +273,7 @@
   --swatch-tertiary-color: var(--medium-bg-color);
   --swatch-text-secondary-color: var(--dark-text-color);
 }
- 
+
 /* -------------------- */
 /* 2. Global ---------- */
 /* -------------------- */
@@ -509,7 +509,7 @@ select {
 ::file-selector-button {
   margin: 0 0.5em 0 -0.25em;
 }
- 
+
 /* -------------------- */
 /* 3. Header ---------- */
 /* -------------------- */
@@ -761,7 +761,7 @@ a#account-topbutton:is(:hover, :active, :focus) {
   background: rgb(var(--search-hover-bg-color));
   color: rgb(var(--search-hover-text-color));
 }
- 
+
 /* -------------------- */
 /* 4. Sidebar --------- */
 /* -------------------- */
@@ -895,7 +895,7 @@ a#account-topbutton:is(:hover, :active, :focus) {
 #side-bar .close-menu img {
   display: none;
 }
- 
+
 /* -------------------- */
 /* 5. Main ------------ */
 /* -------------------- */
@@ -983,7 +983,7 @@ a#account-topbutton:is(:hover, :active, :focus) {
   margin: 0.25rem 0;
   gap: 0.25rem;
 }
- 
+
 /* -------------------- */
 /* 6. Footer ---------- */
 /* -------------------- */
@@ -1023,7 +1023,7 @@ a#account-topbutton:is(:hover, :active, :focus) {
 #footer a, #license-area a {
   color: rgb(var(--footer-link-color));
 }
- 
+
 /* -------------------- */
 /* 7. Content --------- */
 /* -------------------- */
@@ -1435,7 +1435,7 @@ div.creditButtonStandalone p a::before {
   margin: 0;
   line-height: 1;
 }
- 
+
 /* -------------------- */
 /* 8. Popups ---------- */
 /* -------------------- */
@@ -1634,7 +1634,7 @@ div.creditBottomRate {
 #avatar-hover-container {
   display: none;
 }
- 
+
 /* -------------------- */
 /* 9. Action ---------- */
 /* -------------------- */
@@ -2237,7 +2237,7 @@ form[onsubmit*="setParent"] table.form td:last-child {
   justify-content: space-evenly;
   align-items: center;
 }
- 
+
 /* -------------------- */
 /* 10. Modules -------- */
 /* -------------------- */
@@ -2361,7 +2361,7 @@ a.button[onclick*="CloneModule"] {
   margin-left: 0;
   margin-right: 0;
 }
- 
+
 /* -------------------- */
 /* 11. Utilities -------- */
 /* -------------------- */
@@ -2843,7 +2843,7 @@ a.button[onclick*="CloneModule"] {
 .hidden {
   display: none;
 }
- 
+
 /* -------------------- */
 /* 12. Components ----- */
 /* -------------------- */
@@ -2860,7 +2860,7 @@ a.button[onclick*="CloneModule"] {
 .bettercollap .collapsible-block-folded {
   margin: 0;
 }
- 
+
 /* -------------------- */
 /* 13. Mobile --------- */
 /* -------------------- */
