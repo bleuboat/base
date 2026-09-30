@@ -245,9 +245,9 @@
 
   --popup-bg-color: var(--global-bg-color);
   --popup-text-color: var(--global-text-color);
-  --popup-title-bg-color: var(--dark-bg-color);
-  --popup-title-text-color: var(--dark-text-color);
-  --popup-loading-border-color: var(--global-border-color);
+  --popup-title-bg-color: var(--light-bg-color);
+  --popup-title-text-color: var(--light-text-color);
+  --popup-loading-border-color: var(--medium-bg-color);
   --popup-loading-border-width: 0.125rem;
   --popup-tip-text-color: var(--dark-text-color);
   --popup-border-color: var(--global-border-color);
